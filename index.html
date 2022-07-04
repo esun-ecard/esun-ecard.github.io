@@ -42,6 +42,9 @@
         .async-hide {
             opacity: 0 !important
         }
+        .exclusive .container .ohter li p {
+            max-width: 400px;
+        }
     </style>
     <!-- End Google Tag Manager -->
 </head>
@@ -115,9 +118,7 @@
                 <h2>專屬優惠</h2>
                 <div class="line"></div>
                 <p>活動期間：2022/5/17~2023/3/31</p>
-                <ul class="card_intro_wrap owl-carousel owl-theme owl-loaded owl-drag">
-
-
+                <!-- <ul class="card_intro_wrap owl-carousel owl-theme owl-loaded owl-drag">
                     <div class="owl-stage-outer owl-height" style="height: 650.062px;">
                         <div class="owl-stage"
                             style="transform: translate3d(-1620px, 0px, 0px); transition: all 0.25s ease 0s; width: 4860px;">
@@ -182,6 +183,63 @@
                             </div>
                         </div>
                     </div>
+                </ul> -->
+                <ul class="ohter">
+                    <li style="background-color: #fff; border-radius: 100px; margin: 10px 0;">
+                        <h3><img src="https://www.esunbank.com.tw/event/credit/dgecard/images/card_intro_tt2.svg"
+                                alt=""></h3>
+                        <ul>
+                            <li><img src="https://www.esunbank.com.tw/event/credit/dgecard/images/card_green.svg"
+                                    alt=""></li>
+                            <li>
+                                <h4>指定咖啡/寵物/居家消費<br>
+                                    <span class="c_green big_t">最高享5%現金回饋</span><br>
+                                </h4>
+                            </li>
+                        </ul>
+                        <div class="path">
+                            <h4>寵生活指定通路</h4>
+                            <p><span class="bg_green">咖啡</span> cama(含官網線上購物、cama pay)、路易莎、星巴克(含線上儲值)
+                            </p>
+                            <p><span class="bg_green">寵物</span> 東森寵物雲(含線上購物)、魚中魚、寵物公園</p>
+                            <p><span class="bg_green">居家</span> IKEA(含線上購物)、特力屋、HOLA、迪卡儂(含線上購物)、全盈+PAY</p>
+                        </div>
+                        <ul class="btn_wrap">
+                            <li><a href="" class="btn white_btn" data-fancybox=""
+                                    data-options="{&quot;src&quot;: &quot;#four&quot;, &quot;touch&quot;: false,&quot;smallBtn&quot; : false}"
+                                    onclick="tradecode2()">注意事項</a></li>
+                            <li><a href="https://card.esunbank.com.tw/EsunCreditweb/txnservice/identify?PRJCD=APYCRD0063"
+                                    class="btn" target="_blank" onclick="tradecode()">立即辦卡</a></li>
+                        </ul>
+                    </li>
+                    <li style="background-color: #fff; border-radius: 100px; margin: 10px 0;">
+                        <h3><img src="https://www.esunbank.com.tw/event/credit/dgecard/images/card_intro_tt1.svg"
+                                alt=""></h3>
+                        <ul>
+                            <li><img src="https://www.esunbank.com.tw/event/credit/dgecard/images/card_purple.svg"
+                                    alt=""></li>
+                            <li>
+                                <h4>指定百貨/美妝消費<br>
+                                    <span class="c_purple big_t">最高享3%現金回饋</span>
+                                </h4>
+                            </li>
+                        </ul>
+                        <div class="path">
+                            <h4>輕時尚指定通路</h4>
+                            <p><span class="bg_purple">美妝</span>
+                                唐吉軻德、松本清、Tomod’s、日藥本舖、屈臣氏(含線上購物)、寶雅(含線上購物、寶雅Pay)、康是美(含線上購物)
+                            </p>
+                            <p><span class="bg_purple">百貨(App消費)</span> skm Pay、HAPPY GO Pay、101 Pay、GM
+                                Pay、Breeze Pay、Q Pay、eslite Pay</p>
+                        </div>
+                        <ul class="btn_wrap">
+                            <li><a href="" class="btn white_btn" data-fancybox=""
+                                    data-options="{&quot;src&quot;: &quot;#five&quot;, &quot;touch&quot;: false,&quot;smallBtn&quot; : false}"
+                                    onclick="tradecode2()">注意事項</a></li>
+                            <li><a href="https://card.esunbank.com.tw/EsunCreditweb/txnservice/identify?PRJCD=APYCRD0063"
+                                    class="btn" target="_blank" onclick="tradecode()" style="background-color: #ceaaff;">立即辦卡</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="ohter" data-sr-id="7">
                     <li>
@@ -758,13 +816,6 @@
             path: 'https://sandler0327.github.io/20220526/moutain.json'
         });
 
-
-
-
-
-
-
-
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
@@ -776,16 +827,13 @@
             margin: 10, // 外距 10px
             autoplayTimeout: 13000,
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-
-
             responsive: {
                 0: {
                     items: 1,
                     nav: false
                 },
                 600: {
-                    items: 1,
-
+                    items: 2,
                     nav: true
                 },
 
